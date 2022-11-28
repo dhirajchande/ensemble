@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row row-cols-4">
+        <div class="col mt-5" *ngFor="let c of courses">
+            <a href="/course/{{c.id}}">
+                <div class="card"  >
+                    <img src="{{c.image}}" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{c.name}}</h5>
+                        <p class="card-text">{{c.description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
